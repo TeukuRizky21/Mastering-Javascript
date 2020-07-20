@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function With Parameter Function</title>
+</head>
+
+<body>
+    <h2>Javascript Functions With Parameter Function</h2>
+    <p>This example calls a function which performs a calculation,
+        and return the result:
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        function showMessage(from, text = test()){
+            alert(`${from}: ${text}`)
+        }
+
+        function test(){
+            return 'Welcome!'
+        }
+
+        showMessage('Trx') // Trx: not text given
+    </script>
+</body>
+
+</html>

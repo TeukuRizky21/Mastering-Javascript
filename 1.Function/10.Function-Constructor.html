@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Constructor</title>
+</head>
+
+<body>
+    <p>Javascript has an built-in function constructor.</p>
+    <p id="demo"></p>
+
+    <script>
+        const myFunction = new Function('a', 'b', 'return a * b')
+        document.getElementById('demo').innerHTML = myFunction(4, 3)
+    </script>
+</body>
+
+</html>

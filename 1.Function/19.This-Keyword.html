@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+
+<body>
+    <script>
+        // this keyword is used to refer to the object that has been 
+        // passed to a function
+
+        function account(username, password) {
+            this.username = username
+            this.password = password
+        }
+
+        const myAccount = new account('21trxMod@gmail', '123456')
+        console.log(myAccount)
+        console.log(typeof myAccount)
+
+    </script>
+</body>
+
+</html>

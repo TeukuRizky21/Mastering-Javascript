@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Invoke Function</title>
+</head>
+
+<body>
+    <p>Function can be invoked automatically without being called.</p>
+    <p id="demo"></p>
+
+    <script>
+        // Function expressions can be made "self-invoking".
+        // A self-invoking expression is invoked (started) automatically.
+        // Without being called.
+        // Function expressions will execute automatically if the
+        // expression is followeb by ().
+        // You cannot self-invoke a function declaration.
+        // You have to add parantheses around the function to indicate that
+        // it is a function expression.
+
+        (function () {
+            let message = "'Hello!' I called myself"
+            document.getElementById('demo').innerHTML = message
+        })()
+    </script>
+</body>
+
+</html>

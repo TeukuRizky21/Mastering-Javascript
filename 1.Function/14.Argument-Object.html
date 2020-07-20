@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument Object</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        function sumAll() {
+            let sum = 0
+            // Javascript functions have a built-in object called the 
+            // arguments object.
+            // The argument object contains an array of the arguments used
+            // when the function was called (invoked).
+
+            for (let i = 0; i < arguments.length; i++) {
+                sum += arguments[i]
+            }
+            return sum
+        }
+        let result = sumAll(1, 123, 500, 115, 44, 88)
+        document.getElementById('demo').innerHTML = result
+    </script>
+</body>
+
+</html>

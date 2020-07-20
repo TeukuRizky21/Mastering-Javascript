@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Function Arguments</title>
+</head>
+
+<body>
+    <h2>Javascript Functions</h2>
+    <p>In this example the fullName method of person is
+        <strong>applied</strong> on person1:
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            fullName: function (city, country) {
+                const result = `${this.firstName} ${this.lastName} 
+                ${city} ${country}`
+                return result
+            }
+        }
+
+        const person1 = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+        const x = person.fullName.apply(person1, ['NAD', 'Indonesia']);
+        document.getElementById("demo").innerHTML = x;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Prototype Properties</title>
+</head>
+
+<body>
+    <h2>Javascript Objects</h2>
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first
+            this.lastName = last
+            this.age = age
+            this.eyeColor = eye
+        }
+        Person.prototype.nationality = 'Indonesian'
+
+        const myFriend = new Person('John', 'Doe', 21, 'blue')
+        const r = `My friend is ${myFriend.nationality}`
+        document.getElementById('demo').innerHTML = r
+    </script>
+</body>
+
+</html>

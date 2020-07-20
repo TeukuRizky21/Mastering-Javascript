@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Maker</title>
+</head>
+
+<body>
+    <script>
+        function makeUser(name, age){
+            return {
+                name: name,
+                age: age
+                // ...other properties
+            }
+        }
+
+        const user = makeUser('John', 21)
+        alert(typeof user) // object
+        alert(user.name) // John
+    </script>
+</body>
+
+</html>

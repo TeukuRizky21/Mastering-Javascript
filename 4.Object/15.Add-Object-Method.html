@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Object Method</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            id: 5543
+        }
+
+        person.name = function () {
+            return `${this.firstName} ${this.lastName}`
+        }
+
+        const r = `My friend is ${person.name}`
+        document.getElementById('demo').innerHTML = r
+
+        const dogTypes = {
+            GermanShepard: {
+                color: 'black and white'
+            },
+            Beagle: {
+                color: 'brown and white'
+            },
+            cheuwahwah: {
+                color: 'green and white'
+            },
+            poodle: {
+                color: 'purple and white'
+            }
+        }
+    </script>
+</body>
+
+</html>

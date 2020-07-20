@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+
+<body>
+    <h2>Javascript Object Constructor</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Constructor function for person objects
+        function Person(first, last, age, eye){
+            this.firstName = first
+            this.lastName = last
+            this.age = age
+            this.eyeColor = eye
+        }
+
+        // Create two person objects
+        const myFried = new Person('John', 'Doe', 21, 'blue')
+        const myGirl = new Person('Annisa', 'Fadila', 19, 'purple')
+
+        // Display age
+        const r = `My girl is ${myGirl.age}`
+        document.getElementById('demo').innerHTML = r
+    </script>
+</body>
+
+</html>

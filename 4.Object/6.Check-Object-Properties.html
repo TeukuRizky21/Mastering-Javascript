@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Object Properties</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: 'John',
+            age: 21
+        }
+
+        for (let us in person) {
+            alert(us)
+        }
+
+        alert('age' in person) // true, person.age exists
+        alert('isAdmin' in person) // false, person.isAdmin doesn't exist
+    </script>
+</body>
+
+</html>

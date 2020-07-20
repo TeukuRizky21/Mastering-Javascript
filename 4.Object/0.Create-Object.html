@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Object</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p>An object is a collection of variable and function that
+        technically called properties and methods.
+    </p>
+
+    <script>
+        // An empty object can be created using one of two syntaxes:
+        const user = new Object() // "object constructor" syntax
+        const users = {} // "object literal" syntax
+
+        // Objects are variables too. But objects can contain many values.
+        // We can immediately put some properties into {...} as 
+        // "key: value" pairs:
+
+        const person = {
+            firstName: 'John',
+            age: 50
+        }
+
+        alert(`firstName: ${person.firstName}`)
+        alert(`Age: ${person.age}`)
+    </script>
+</body>
+
+</html>

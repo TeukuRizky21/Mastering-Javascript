@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Object Properties</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: 'John',
+            age: 50,
+            'likes birds': true
+        }
+        // The value can be of any type. Let's add a boolean one:
+        person.isAdmin = true
+        document.getElementById('demo').innerHTML = person['isAdmin']
+        console.log(person)
+    </script>
+</body>
+
+</html>

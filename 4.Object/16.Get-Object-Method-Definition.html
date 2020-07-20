@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Object Method Definition</title>
+</head>
+
+<body>
+    <p>An object method is a function definiton,
+        stored as a property
+    </p>
+    <p>If you access it without (),
+        it will return the function definition:
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            id: 727272
+        }
+
+        person.name = function() {
+            return `${this.firstName} ${this.lastName}`
+        }
+
+        let r = `My friend is ${person.name}`
+        document.getElementById('demo').innerHTML = r
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time() - 1 Method</title>
+</head>
+
+<body>
+    <h1>Javascript console.time() Method</h1>
+    <p>Press F12 or (Ctrl + Shift + I) on your keyboard to view the
+        message in the console view.
+    </p>
+
+    <script>
+        // Definition:
+        // The console.time() method starts a timer in the console view.
+        // This method allows you to time certain operations in your
+        // code for testing purposes.
+        // use the console.timeEnd() method to end the timer and display
+        // the result in the console.view
+        // Use the label parameter to name the timer, then you are able
+        // to have many timers on the same page.
+        // Tip: When testing console methods, be sure to have the console
+        // view visible.
+
+        console.time()
+        for (let i = 0; i < 10000; i++) {
+            console.log(i)
+        }
+        console.timeEnd()
+    </script>
+
+    <p>Time the number of miliseconds it takes to perform a for-loop a
+        hundred thousand times.
+    </p>
+    <p><strong>Note: </strong>the console.time() method starts the
+        timer and the console.timeEnd() method ends the timer and writes
+        the result in the console view.</p>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log() - 2</title>
+</head>
+
+<body>
+    <h1>Javascript console.log() Method</h1>
+    <p>Press F12 or (Ctrl + Shift + I) on your keyboard to view the
+        message in the console view.</p>
+    <p>This example demonstrates how an object is displayed in
+        the console view.</p>
+
+    <script>
+        const myObj = {
+            firsname: "John",
+            lastname: "Doe"
+        };
+        console.log(myObj);
+
+        //best scenario, remove this below code to see how its work
+        console.log(JSON.parse(JSON.stringify(myObj)))
+    </script>
+</body>
+
+</html>

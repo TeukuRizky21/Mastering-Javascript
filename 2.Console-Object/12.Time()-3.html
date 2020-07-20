@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time() - 3 Method</title>
+</head>
+
+<body>
+    <h1>Javascript console.time() Method</h1>
+    <p>Press F12 or (Ctrl + Shift + I) on your keyboard to view the
+        message in the console view.
+    </p>
+
+    <script>
+        console.time('test for loop')
+        for (let i = 0; i < 10000; i++) {
+            // some code
+        }
+        console.timeEnd('test for loop') // 0.541259765625ms
+
+        i = 0
+        console.time('test while loop')
+        while (i < 10000) {
+            i++
+        }
+        console.timeEnd('test while loop') // 1.15087890625ms
+    </script>
+    <p>Test to see which loop is the fastest.</p>
+</body>
+
+</html>

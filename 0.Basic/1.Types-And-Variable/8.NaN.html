@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN Value</title>
+</head>
+
+<body>
+    <script>
+        alert("not a number" / 2);
+        alert("not a number" / 2 + 5);
+        const nan = 'Not a Number'
+        const a = 2
+        const b = 3
+        console.log(nan / a) // NaN
+        // such division is erroneous
+        // NaN is sticky. Any further operation on NaN would give NaN
+        console.log(nan / a + b) // NaN
+    </script>
+</body>
+
+</html>

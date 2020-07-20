@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse Float</title>
+</head>
+
+<body>
+    <script>
+        // The following examples all return 3.14
+        const a = parseFloat(3.14)
+        const b = parseFloat('3.14')
+        const c = parseFloat('314e-2');
+        const d = parseFloat('0.0314E+2');
+        const e = parseFloat('3.14more non-digit characters');
+
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(d)
+        console.log(e)
+    </script>
+</body>
+
+</html>

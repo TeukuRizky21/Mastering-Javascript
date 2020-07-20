@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Declaration</title>
+</head>
+
+<body>
+    <script>
+        // Javascript represents numbers using the 64-bit floating-point format
+        // defined by the IEEE 754 standard.
+        // Besides regular numbers, there are so-called "special numeric values"
+        // which also belong to that type:
+        // 1. Infinity = represents the mathematical Infinity ∞. It is a special
+        // value that's greater than any number.
+        // 2. Infinity and
+        // 3. NaN = represents a computational error. It is a result of an incorect
+        // or an undefined mathematical operation.
+        var years = 2020
+        var pi = 3.14
+
+        // In Javascript, there are 3 types of quotes.
+        // 1. Double quotes: "Hello".
+        // 2. Single quotes: 'Hello'.
+        // 3. Backticks: `Hello`.
+        var trx = 'TrxMod21X'
+
+
+        // The boolean type has only two values: true and false.
+        var logic = true
+
+        // All other types are called "primitive", because their values can
+        // contain only a single thing (be it a string or a number or whatever).
+        // In contrast, objects are used to store collections of data and more 
+        // complex entites.
+        var people = {
+            name: 'TrxMod21X'
+        }
+
+        // The special null value does not belong to any type of those described
+        // above.
+        var nullvar = null
+
+        // The meaning of undifined is "value is not assigned".
+        var vna = undefined
+
+        console.log(years)
+        console.log(pi)
+        console.log(trx)
+        console.log(logic)
+        console.log(people.name)
+        console.log(vna)
+
+        // There is a widespread practice to use constants as aliases for
+        // difficult-to-remember values that are known prior to execution.
+        var COLOR_RED = "#F00";
+        var COLOR_GREEN = "#0F0";
+        var COLOR_BLUE = "#00F";
+        var COLOR_ORANGE = "#FF7F00";
+
+    </script>
+</body>
+
+</html>

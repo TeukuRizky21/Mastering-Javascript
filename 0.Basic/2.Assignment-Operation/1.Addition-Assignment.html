@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition-Assignment</title>
+</head>
+
+<body>
+    <script>
+        // Assuming the following variables
+        foo = 'foo'
+        bar = 5
+        baz = true
+
+        // Number + Number -> addition
+        console.log(bar += 2) // 7
+
+        // Boolean + Number -> addition
+        console.log(baz += 1) // 2
+
+        // Boolean + Boolean -> addition
+        console.log(baz += false) // 1
+
+        // Number + String -> concatenation
+        console.log(bar += 'foo') // '7foo'
+
+        // String + Boolean -> concatenation
+        console.log(foo += false) // 'foofalse'
+
+        // String + String -> concatenation
+        console.log(foo += 'bar') // 'foofalsebar'
+    </script>
+</body>
+
+</html>

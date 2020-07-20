@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Control</title>
+</head>
+
+<body>
+    <script>
+        let aProperty
+        document.write('Navigator Object Properties<br/>')
+
+        for (aProperty in navigator) {
+            document.write(`${aProperty}<br/>`)
+        }
+        document.write('Exiting from the loop!')
+
+        let string1 = ''
+        let object1 = {
+            a: 1,
+            b: 2,
+            c: 3
+        }
+
+        for (let property1 in object1) {
+            string1 += object1[property1]
+        }
+
+        console.log(string1) // expected output: '123'
+    </script>
+</body>
+
+</html>

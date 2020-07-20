@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+
+<body>
+    <script>
+        // Convert to string
+        var value = true
+        console.log(typeof value) // boolean
+
+        value = String(value) // now value is a string "true"
+        console.log(typeof value) // string
+
+        // Convert to number
+        var str = '123'
+        var num = Number(str) // becomes a number 123
+        console.log(typeof num) // number
+
+        var age = Number('an arbitrary string instead of a number')
+        var nan = Number(age)
+        console.log(age) //NaN -- Not a Number
+        console.log(typeof age) // string
+    </script>
+</body>
+
+</html>

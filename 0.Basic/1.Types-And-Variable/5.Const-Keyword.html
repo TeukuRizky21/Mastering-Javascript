@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const Keyword</title>
+</head>
+
+<body>
+    <script>
+        const number = 42
+
+        try {
+            number = 99
+        } catch (err) {
+            console.log(err)
+            // expected output: TypeError: Assignment to constant variable.
+        }
+
+        console.log(number) // expected output: 42
+    </script>
+</body>
+
+</html>

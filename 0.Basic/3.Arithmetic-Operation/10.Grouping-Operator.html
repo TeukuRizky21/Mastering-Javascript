@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Operator</title>
+</head>
+
+<body>
+    <script>
+        let a = 1
+        let b = 2
+        let c = 3
+
+        // default precedence
+        console.log(a + b * c) // 7
+        // evaluated by default like this
+        console.log(a + (b * c) + (a + b) * c) // 16
+        //             7        +         9
+        // Now overiding precedence
+        // addition before multiplication
+
+        // Which is equivalent to
+        console.log(a * c + b * c) // 9
+    </script>
+</body>
+
+</html>

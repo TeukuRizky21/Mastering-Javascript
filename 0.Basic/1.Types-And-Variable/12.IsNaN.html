@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsNaN</title>
+</head>
+
+<body>
+    <script>
+        // The following examples all return 15
+        function miliseconds(x) {
+            if (isNaN(x)) {
+                return 'Not a Number'
+            }
+            return x * 1000
+        }
+
+        console.log(miliseconds('100F')) // expected output: 'Not a Number!'
+        console.log(miliseconds('0.0314E+2')) // expected output: 3140
+    </script>
+</body>
+
+</html>
